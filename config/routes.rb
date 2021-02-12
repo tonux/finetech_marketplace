@@ -2,6 +2,16 @@ Rails.application.routes.draw do
   # Spree routes
   mount Spree::Core::Engine, at: '/'
 
+  # Spree::Core::Engine.routes.draw do
+  #   namespace :api do
+  #       namespace :v2 do
+  #         namespace :storefront do
+  #            resources :vendors, only: %i[index show]
+  #         end
+  #      end
+  #    end
+  # end
+
   # sidekiq web UI
   require 'sidekiq/web'
   Sidekiq::Web.use Rack::Auth::Basic do |username, password|

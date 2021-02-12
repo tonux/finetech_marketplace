@@ -6,6 +6,7 @@ ruby '2.7.2'
 gem 'rails', '~> 6.1.2'
 # Use postgresql as the database for Active Record
 gem 'pg'
+gem 'mysql2'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -85,6 +86,8 @@ gem 'spree_gateway', '~> 3.9'
 gem 'spree_auth_devise', '~> 4.3'
 gem 'spree_i18n', '~> 5.0'
 gem 'spree_dev_tools', require: false, group: %w[test development]
+
+gem 'spree_multi_vendor'
 
 # Sentry Client
 gem 'sentry-raven'

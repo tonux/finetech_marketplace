@@ -2,6 +2,7 @@ common: &defaults
   name: spree_starter
   key: <%= ENV['SCOUT_KEY'] %>
   monitor: true
-
+development:
+  <<: *defaults
 production:
   <<: *defaults
